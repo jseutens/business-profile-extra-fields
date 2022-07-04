@@ -97,13 +97,13 @@
 }
 
 .bp-phone:before {
-	content: "\f470";
+	content: "\f525";
 }
 .bp-cellphone:before {
 	content: "\f470";
 }
 .bp-fax:before {
-	content: "\f470";
+	content: "\f193";
 }
 
 .bp-ordering-link::before {
