@@ -76,7 +76,8 @@ function prefix_print_whatsapp() {
 	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) : ?>
 
 	<div class="bp-whatsapp" itemprop="telephone">
-	<a href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
+		
+	<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
 	</div>
 
 	<?php else : ?>
@@ -100,3 +101,4 @@ function prefix_added_styles() {
 				font-family: "fontawesome";
 			}';
         wp_add_inline_style( 'bpfwp-default', $custom_css );
+}
