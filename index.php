@@ -3,7 +3,7 @@
  * Plugin Name: Business Profile Extra Fields
  * Plugin URI: https://github.com/jseutens/business-profile-extra-fields/
  * Description: Modifies the Business Profile plugin to include a mobile number field.
- * Version: 0.0.4
+ * Version: 1.0.0
  * Author: Johan Seutens
  * Author URI: http://www.aati.be
  * @link - https://gist.github.com/NateWr/b28bb63ba8a73bb14eac
@@ -11,7 +11,14 @@
 
 if ( ! defined( 'ABSPATH' ) )
 	exit;
-
+/**
+ * remove the contact-card.css style card as it is loaded in the page and not the header
+ */
+add_action( 'wp_enqueue_scripts', 'remove_bpfwpcontactcard_stylesheet', 20 );
+function remove_bpfwpcontactcard_stylesheet() {
+    wp_dequeue_style( 'bpfwp-default' );
+    wp_deregister_style( 'bpfwp-default' );
+}
 /**
  * Add extra fields to Business Profile
  *
