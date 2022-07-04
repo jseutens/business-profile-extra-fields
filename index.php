@@ -11,6 +11,11 @@
 
 if ( ! defined( 'ABSPATH' ) )
 	exit;
+/* Add Dashicons in WordPress Front-end */
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+   wp_enqueue_style( 'dashicons' );
+}
 /**
  * Add extra fields to Business Profile
  *
@@ -74,10 +79,14 @@ function prefix_print_whatsapp() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) : ?>
-	<div class="bp-whatsapp" itemprop="telephone">
-<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
+
+	<div class="bp-whatsapp dashicons-before dashicons-whatsapp" itemprop="telephone">
+<a  href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
 	</div>
+
 	<?php else : ?>
 	<meta itemprop="telephone" content="<?php echo esc_attr( $bpfwp_controller->settings->get_setting( 'whatsapp' ) ); ?>">
+
 	<?php endif;
     }
+    
