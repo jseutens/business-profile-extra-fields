@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Business Profile Extra Fields
  * Plugin URI: https://github.com/jseutens/business-profile-extra-fields/
- * Description: Modifies the Business Profile plugin to include a mobile number field.
+ * Description: Modifies the Business Profile plugin to include a mobile number , whatsapp and fax number field.
  * Version: 1.0.0
  * Author: Johan Seutens
  * Author URI: http://www.aati.be
