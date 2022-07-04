@@ -97,7 +97,7 @@ function prefix_added_styles() {
 	);
         $custom_css = '
 		.bp-whatsapp:before {
-				content: "fa-whatsapp";
+				content: "\f232";
 				font-family: "fontawesome";
 			}';
         wp_add_inline_style( 'bpfwp-default', $custom_css );
