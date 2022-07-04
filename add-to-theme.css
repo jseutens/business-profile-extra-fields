@@ -1,21 +1,3 @@
-{
-			display: inline-block;
-			width: 1.5em;
-			height: 1em;
-			font-size: 1.5em;
-			line-height: 1;
-			font-family: dashicons;
-			text-decoration: inherit;
-			font-weight: 400;
-			font-style: normal;
-			vertical-align: top;
-			text-align: center;
-			-webkit-transition: color .1s ease-in 0;
-			transition: color .1s ease-in 0;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
 /* Frontend CSS Stylesheet for Business Profile contact cards */
 
 .bp-contact-card {
@@ -86,9 +68,6 @@
 
 .bp-directions:before,
 .bp-phone:before,
-.bp-fax:before,
-.bp-cellphone:before,
-.bp-whatsapp:before,
 .bp-contact:before,
 .bp-ordering-link:before,
 .bp-booking:before,
@@ -135,16 +114,7 @@
 .bp-opening-hours .bp-title:before {
 	content: "\f469";
 }
-
-.bp-fax:before {
-	content: "\f491";
-}
-
-.bp-cellphone::before {
-	  content: "\f470";
-}
 .bp-whatsapp:before {
-   	font-family: "fontawesomebrands"; 
-	font-weight: 400;
-	content: "\f232";
+	/* content: "\f19a";*/
+ color:#25D366;
 }
