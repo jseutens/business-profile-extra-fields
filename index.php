@@ -3,7 +3,7 @@
  * Plugin Name: Business Profile Extra Fields
  * Plugin URI: https://github.com/jseutens/business-profile-extra-fields/
  * Description: Modifies the Business Profile plugin to include a mobile number field.
- * Version: 0.0.1
+ * Version: 0.0.4
  * Author: Johan Seutens
  * Author URI: http://www.aati.be
  * @link - https://gist.github.com/NateWr/b28bb63ba8a73bb14eac
