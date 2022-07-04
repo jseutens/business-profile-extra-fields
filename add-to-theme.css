@@ -68,6 +68,8 @@
 
 .bp-directions:before,
 .bp-phone:before,
+.bp-cellphone:before,
+.bp-fax:before,
 .bp-contact:before,
 .bp-ordering-link:before,
 .bp-booking:before,
@@ -95,6 +97,12 @@
 }
 
 .bp-phone:before {
+	content: "\f470";
+}
+.bp-cellphone:before {
+	content: "\f470";
+}
+.bp-fax:before {
 	content: "\f470";
 }
 
