@@ -74,31 +74,10 @@ function prefix_print_whatsapp() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) : ?>
-
 	<div class="bp-whatsapp" itemprop="telephone">
-		
-	<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
+<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
 	</div>
-
 	<?php else : ?>
 	<meta itemprop="telephone" content="<?php echo esc_attr( $bpfwp_controller->settings->get_setting( 'whatsapp' ) ); ?>">
-
 	<?php endif;
     }
-    
-add_action( 'wp_enqueue_scripts', 'prefix_added_styles' );
-/**
- * Add the mobile icon with a bit of CSS and add via wp_add_inline_style to append to core Business Profile CSS - bpfwp-default
- */
-function prefix_added_styles() {
-	wp_enqueue_style(
-		'bpfwp-default',
-		plugins_url() . '/business-profile/assets/css/contact-card.css'
-	);
-        $custom_css = '
-		.bp-whatsapp:before {
-				content: "\f232";
-				font-family: "fontawesome";
-			}';
-        wp_add_inline_style( 'bpfwp-default', $custom_css );
-}
