@@ -70,6 +70,7 @@
 .bp-phone:before,
 .bp-cellphone:before,
 .bp-fax:before,
+.bp-whatsapp:before,
 .bp-contact:before,
 .bp-ordering-link:before,
 .bp-booking:before,
@@ -97,7 +98,7 @@
 }
 
 .bp-phone:before {
-	content: "\f525";
+	content: "\f525" !important;
 }
 .bp-cellphone:before {
 	content: "\f470";
@@ -125,4 +126,10 @@
 .bp-whatsapp:before {
 	/* content: "\f19a";*/
  color:#25D366;
+}
+
+.dashicons-before:before{
+  width: 1.5em !important;
+  height: 1em !important;
+  font-size: 1.5em !important;
 }
