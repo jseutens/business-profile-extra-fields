@@ -98,7 +98,7 @@
 }
 
 .bp-phone:before {
-	content: "\f525" !important;
+	content: "\f525";
 }
 .bp-cellphone:before {
 	content: "\f470";
