@@ -127,7 +127,11 @@
 	/* content: "\f19a";*/
  color:#25D366;
 }
-
+.bp-whatsapp-short {
+	/* content: "\f19a";*/
+ color:#25D366;
+font-size:2.2rem !important;
+}
 .dashicons-before:before{
   width: 1.5em !important;
   height: 1em !important;
