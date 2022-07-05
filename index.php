@@ -67,6 +67,7 @@ add_filter( 'bpwfp_contact_card_defaults', 'prefix_contact_card_defaults' );
 function prefix_contact_card_defaults( $defaults ) {
 	$defaults['show_cellphone'] = false;
 	$defaults['show_whatsapp'] = false;
+    $defaults['show_whatsapp_short'] = false;
 	$defaults['show_fax'] = false;
 	return $defaults;
 }
@@ -128,15 +129,9 @@ function prefix_print_cellphone() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_cellphone'] ) : ?>
-
 	<div class="bp-cellphone" itemprop="telephone">
 	<a href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('cellphone') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'cellphone' ); ?></a>
 	</div>
-
-	<?php else : ?>
-	<meta itemprop="telephone" content="<?php echo esc_attr( $bpfwp_controller->settings->get_setting( 'cellphone' ) ); ?>">
-
-
 	<?php endif;
     }
 
@@ -147,15 +142,15 @@ function prefix_print_cellphone() {
     function prefix_print_whatsapp() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
-	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) : ?>
-
+	
+    if ( $bpfwp_controller->display_settings['show_whatsapp_short'] ) : ?>
+<a class="bp-whatsapp-short dashicons-before dashicons-whatsapp" href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>">&nbsp;</a>
+	<?php endif;
+	
+	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) :  ?>
 	<div class="bp-whatsapp dashicons-before dashicons-whatsapp" itemprop="telephone">
-<a  href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
+	<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
 	</div>
-
-	<?php else : ?>
-	<meta itemprop="telephone" content="<?php echo esc_attr( $bpfwp_controller->settings->get_setting( 'whatsapp' ) ); ?>">
-
 	<?php endif;
     }
 
@@ -167,13 +162,8 @@ function prefix_print_fax() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_fax'] ) : ?>
-
 	<div class="bp-fax" itemprop="telephone">
 	<a href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('fax') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'fax' ); ?></a>
 	</div>
-
-	<?php else : ?>
-	<meta itemprop="telephone" content="<?php echo esc_attr( $bpfwp_controller->settings->get_setting( 'fax' ) ); ?>">
-
 	<?php endif;
     }
