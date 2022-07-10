@@ -25,7 +25,7 @@ Hoping Five Star will finaly spend a few hours adding these fields into the plug
 
 == Changelog ==
 = 1.0.1 =
-WDAC 2.0 compliance
+WDAC 2.0 compliance for the added fields
 = 1.0.0 =
 initial release
 == Upgrade Notice ==
