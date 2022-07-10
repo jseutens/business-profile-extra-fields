@@ -1,0 +1,30 @@
+=== business-profile-extra-fields ===
+Contributors: jseutens
+Tags:  mobile , fax , cellphone , whatsapp, business profile, seo, local seo, schema, address, google map, contact, phone, contact card, vcard, contact info, business location, business address, business map, business schema, organization schema, corporation schema, contact schema, address schema, location schema, map schema, business structured data, business microdata, address microdata, location structured data, location microdata, contact shortcode, location shortcode, address shortcode, schema shortcode, gutenberg schema, gutenberg address
+Requires at least: 5.9.3
+Tested up to: 6.0
+Requires PHP: 7.4
+Stable tag: 1.0.1
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Installation ==
+This section describes how to install the plugin and get it working.
+
+1. Upload the plugin files to the `/wp-content/plugins/business-profile-extra-fields` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+
+== Frequently Asked Questions ==
+no faq , read the script :-) it is well documented ;-)
+Included in the comments of the script from where I got each entry.
+
+What's up next
+Hoping Five Star will finaly spend a few hours adding these fields into the plugin
+
+== Changelog ==
+= 1.0.1 =
+WDAC 2.0 compliance
+= 1.0.0 =
+initial release
+== Upgrade Notice ==
+upgrade as you please
