@@ -3,7 +3,7 @@
  * Plugin Name: Business Profile Extra Fields
  * Plugin URI: https://github.com/jseutens/business-profile-extra-fields/
  * Description: Modifies the Business Profile plugin to include a mobile number , whatsapp and fax number field.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Johan Seutens
  * Author URI: http://www.aati.be
  * @link - https://gist.github.com/NateWr/b28bb63ba8a73bb14eac
@@ -130,7 +130,7 @@ function prefix_print_cellphone() {
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_cellphone'] ) : ?>
 	<div class="bp-cellphone" itemprop="telephone">
-	<a href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('cellphone') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'cellphone' ); ?></a>
+	<a  title="<?php echo __( 'Cellphone', BPFWP_TEXTDOMAIN ) ?>" href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('cellphone') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'cellphone' ); ?></a>
 	</div>
 	<?php endif;
     }
@@ -144,12 +144,12 @@ function prefix_print_cellphone() {
 	global $bpfwp_controller;
 	
     if ( $bpfwp_controller->display_settings['show_whatsapp_short'] ) : ?>
-<a class="bp-whatsapp-short dashicons-before dashicons-whatsapp" href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>">&nbsp;</a>
+<a class="bp-whatsapp-short dashicons-before dashicons-whatsapp" title="<?php echo __( 'Whatsapp', BPFWP_TEXTDOMAIN ) ?>" href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>">&nbsp;</a>
 	<?php endif;
 	
 	if ( $bpfwp_controller->display_settings['show_whatsapp'] ) :  ?>
 	<div class="bp-whatsapp dashicons-before dashicons-whatsapp" itemprop="telephone">
-	<a href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
+	<a title="<?php echo __( 'Whatsapp', BPFWP_TEXTDOMAIN ) ?>" href="https://wa.me/<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('whatsapp') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'whatsapp' ); ?></a>
 	</div>
 	<?php endif;
     }
@@ -163,7 +163,7 @@ function prefix_print_fax() {
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_fax'] ) : ?>
 	<div class="bp-fax" itemprop="telephone">
-	<a href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('fax') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'fax' ); ?></a>
+	<a  title="<?php echo __( 'Fax', BPFWP_TEXTDOMAIN ) ?>" href="tel:<?php echo (str_replace(' ','',$bpfwp_controller->settings->get_setting('fax') )); ?>"><?php echo $bpfwp_controller->settings->get_setting( 'fax' ); ?></a>
 	</div>
 	<?php endif;
     }
