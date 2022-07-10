@@ -15,8 +15,10 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Frequently Asked Questions ==
-no faq , read the script :-) it is well documented ;-)
-Included in the comments of the script from where I got each entry.
+to display the mobile/cellphone number : show_cellphone=1  
+to display the mobile/cellphone number : show_fax=1
+to display the whatsapp number         : show_whatsapp=1 
+to display the whatsapp logo only      : show_whatsapp_short=1
 
 What's up next
 Hoping Five Star will finaly spend a few hours adding these fields into the plugin
