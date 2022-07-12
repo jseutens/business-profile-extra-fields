@@ -87,7 +87,7 @@ function bpefwp_component_callbacks( $callbacks ) {
 			// When you find the element you want to place it after,
 			// slot it in. This positions the new field where you want it - here it is being placed after the phone field
 			if ( $key == 'phone' ) {
-				$new_callbacks['cellphone'] = 'prefix_print_cellphone';
+				$new_callbacks['cellphone'] = 'bpefwp_print_cellphone';
 			}
 			$callbacks = $new_callbacks;
 	    }
@@ -100,7 +100,7 @@ function bpefwp_component_callbacks( $callbacks ) {
 			// When you find the element you want to place it after,
 			// slot it in. This positions the new field where you want it - here it is being placed after the phone field
 			if ( $key == 'cellphone' ) {
-				$new_callbacks['whatsapp'] = 'prefix_print_whatsapp';
+				$new_callbacks['whatsapp'] = 'bpefwp_print_whatsapp';
 			}
 			$callbacks = $new_callbacks;
 	    }
@@ -113,7 +113,7 @@ function bpefwp_component_callbacks( $callbacks ) {
 			// When you find the element you want to place it after,
 			// slot it in. This positions the new field where you want it - here it is being placed after the phone field
 			if ( $key == 'whatsapp' ) {
-				$new_callbacks['fax'] = 'prefix_print_fax';
+				$new_callbacks['fax'] = 'bpefwp_print_fax';
 			}
 			$callbacks = $new_callbacks;
 	    }
