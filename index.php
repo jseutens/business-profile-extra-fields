@@ -24,11 +24,11 @@ function remove_bpfwpcontactcard_stylesheet() {
  *
  *
  */
- add_filter( 'bpfwp_settings_page', 'prefix_add_settings', 100 ); 
+ add_filter( 'bpfwp_settings_page', 'bpefwp_add_settings', 100 ); 
 /**
  * Add settings options for a cellphone ,whatsapp and fax number - add the fields
  */
-function prefix_add_settings( $sap ) {
+function bpefwp_add_settings( $sap ) {
 	$sap->add_setting(
 		'bpfwp-settings',
 		'bpfwp-contact',
@@ -60,11 +60,11 @@ function prefix_add_settings( $sap ) {
 	return $sap;
 }
 
-add_filter( 'bpwfp_contact_card_defaults', 'prefix_contact_card_defaults' );
+add_filter( 'bpwfp_contact_card_defaults', 'bpefwp_contact_card_defaults' );
 /**
  * Add the cellphone , whatsapp and fax number to the defaults - true to show in widget
  */
-function prefix_contact_card_defaults( $defaults ) {
+function bpefwp_contact_card_defaults( $defaults ) {
 	$defaults['show_cellphone'] = false;
 	$defaults['show_whatsapp'] = false;
     $defaults['show_whatsapp_short'] = false;
@@ -72,15 +72,15 @@ function prefix_contact_card_defaults( $defaults ) {
 	return $defaults;
 }
 
-add_filter( 'bpwfwp_component_callbacks', 'prefix_component_callbacks' );
+add_filter( 'bpwfwp_component_callbacks', 'bpefwp_component_callbacks' );
 /**
  * Add to the callbacks and slot in at a certain place
  */
-function prefix_component_callbacks( $callbacks ) {
+function bpefwp_component_callbacks( $callbacks ) {
 	global $bpfwp_controller;
     
     if ( $bpfwp_controller->settings->get_setting( 'cellphone' ) ) {
-		$callbacks['cellphone'] = 'prefix_print_cellphone';
+		$callbacks['cellphone'] = 'bpefwp_print_cellphone';
 		$new_callbacks = array();
 		foreach( $callbacks as $key => $val ) {
 			$new_callbacks[$key] = $val;
@@ -93,7 +93,7 @@ function prefix_component_callbacks( $callbacks ) {
 	    }
     }
     if ( $bpfwp_controller->settings->get_setting( 'whatsapp' ) ) {
-		$callbacks['whatsapp'] = 'prefix_print_whatsapp';
+		$callbacks['whatsapp'] = 'bpefwp_print_whatsapp';
 		$new_callbacks = array();
 		foreach( $callbacks as $key => $val ) {
 			$new_callbacks[$key] = $val;
@@ -106,7 +106,7 @@ function prefix_component_callbacks( $callbacks ) {
 	    }
     }
     if ( $bpfwp_controller->settings->get_setting( 'fax' ) ) {
-		$callbacks['fax'] = 'prefix_print_fax';
+		$callbacks['fax'] = 'bpefwp_print_fax';
 		$new_callbacks = array();
 		foreach( $callbacks as $key => $val ) {
 			$new_callbacks[$key] = $val;
@@ -125,7 +125,7 @@ function prefix_component_callbacks( $callbacks ) {
  * The callback - Print the cellphone number
  * 
  */
-function prefix_print_cellphone() {
+function bpefwp_print_cellphone() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_cellphone'] ) : ?>
@@ -139,7 +139,7 @@ function prefix_print_cellphone() {
  * The callback - Print the whatsapp number
  * 
  */
-    function prefix_print_whatsapp() {
+    function bpefwp_print_whatsapp() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	
@@ -158,7 +158,7 @@ function prefix_print_cellphone() {
  * The callback - Print the fax number
  * 
  */
-function prefix_print_fax() {
+function bpefwp_print_fax() {
 	// This is the mark up - is the same format as the original but has the number in a clickable link.
 	global $bpfwp_controller;
 	if ( $bpfwp_controller->display_settings['show_fax'] ) : ?>
