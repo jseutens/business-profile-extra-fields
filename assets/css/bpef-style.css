@@ -1,0 +1,192 @@
+/* Frontend CSS Stylesheet for Business Profile contact cards */
+
+.bp-contact-card {
+	font-style: normal;
+}
+.bp-contact-card>div {
+	margin: 1em 0;
+}
+.bp-name {
+	font-weight: bold;
+}
+.bp-opening-hours {
+	max-width: 25em;
+}
+.bp-opening-hours .bp-title {
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+}
+.bp-weekday:before,
+.bp-weekday:after {
+	content: " ";
+	display: table;
+}
+.bp-weekday:after {
+	clear: both;
+}
+.bp-weekday-name {
+	float: left;
+	clear: left;
+	width: 45%;
+}
+.bp-times {
+	float: right;
+	clear: right;
+	width: 45%;
+	text-align: right;
+}
+.bp-times .bp-time {
+	display: block;
+}
+.bp-map {
+	height: 20em;
+	color: #333;
+	font-weight: 400;
+}
+.bp-map a {
+	color: #3a84df;
+}
+.bp-map a:hover {
+	text-decoration: underline;
+}
+
+.bp-map p {
+	margin: 4px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.bp-map img {
+	max-width: none; /* Fixes Google Maps info window close button */
+}
+
+.bp-map-info-window {
+	width: 200px;
+	max-width: 100%;
+}
+
+.bp-directions:before,
+.bp-phone:before,
+.bp-cell-phone:before,
+.bp-whatsapp:before,
+.bp-fax:before,
+.bp-contact:before,
+.bp-ordering-link:before,
+.bp-booking:before,
+.bp-opening-hours-brief:before,
+.bp-opening-hours .bp-title:before {
+	display: inline-block;
+	width: 1.5em;
+	height: 1em;
+	font-size: 1.5em;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: top;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.bp-directions:before {
+	content: "\f230";
+}
+
+.bp-phone:before {
+	content: "\f525";
+}
+
+.bp-cell-phone:before {
+	content: "\f470";
+}
+
+.bp-whatsapp:before {
+	content: "\f19a";
+}
+
+.bp-fax:before {
+	content: "\f193";
+}
+
+.bp-ordering-link::before {
+	content: "\f116";
+}
+
+.bp-contact:before {
+	content: "\f466";
+}
+
+.bp-booking:before {
+	content: "\f145";
+}
+
+.bp-opening-hours-brief:before,
+.bp-opening-hours .bp-title:before {
+	content: "\f469";
+}
+
+/**************
+BLOCK PATTERNS
+**************/
+.bpfwp-pattern-phone .bp-contact-card *,
+.bpfwp-pattern-email .bp-contact-card *,
+.bpfwp-pattern-phone-email .bp-contact-card *,
+.bpfwp-pattern-cell-phone .bp-contact-card *,
+.bpfwp-pattern-fax .bp-contact-card *,
+.bpfwp-pattern-whatsapp .bp-contact-card *,
+.bpfwp-pattern-address .bp-contact-card *,
+.bpfwp-pattern-hours .bp-contact-card *,
+.bpfwp-pattern-map .bp-contact-card * {
+	display: none;
+}
+.bpfwp-pattern-phone .bp-contact-card .bp-phone,
+.bpfwp-pattern-phone .bp-contact-card .bp-phone * {
+	display: initial;
+}
+.bpfwp-pattern-email .bp-contact-card .bp-contact-email,
+.bpfwp-pattern-email .bp-contact-card .bp-contact-email * {
+	display: initial;
+}
+.bpfwp-pattern-phone-email .bp-contact-card .bp-phone,
+.bpfwp-pattern-phone-email .bp-contact-card .bp-phone *,
+.bpfwp-pattern-phone-email .bp-contact-card .bp-contact-email,
+.bpfwp-pattern-phone-email .bp-contact-card .bp-contact-email * {
+	display: initial;
+}
+.bpfwp-pattern-address .bp-contact-card .bp-name,
+.bpfwp-pattern-address .bp-contact-card .bp-name *,
+.bpfwp-pattern-address .bp-contact-card .bp-address,
+.bpfwp-pattern-address .bp-contact-card .bp-address * {
+	display: initial;
+}
+.bpfwp-pattern-address .bp-contact-card .bp-name {
+	display: block;
+}
+.bpfwp-pattern-hours .bp-contact-card .bp-opening-hours,
+.bpfwp-pattern-hours .bp-contact-card .bp-opening-hours * {
+	display: initial;
+}
+.bpfwp-pattern-map .bp-contact-card .bp-map {
+	display: block;
+}
+.bpfwp-pattern-map .bp-contact-card .bp-map * {
+	display: initial;
+}
+.bpfwp-pattern-fax .bp-contact-card .bp-fax,
+.bpfwp-pattern-fax .bp-contact-card .bp-fax * {
+	display: initial;
+}
+.bpfwp-pattern-whatsapp .bp-contact-card .bp-whatsapp,
+.bpfwp-pattern-whatsapp .bp-contact-card .bp-whatsapp * {
+	display: initial;
+}
+.bpfwp-pattern-cell-phone .bp-contact-card .bp-cell-phone,
+.bpfwp-pattern-cell-phone .bp-contact-card .bp-cell-phone * {
+	display: initial;
+}
+

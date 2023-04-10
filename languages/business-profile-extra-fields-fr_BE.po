@@ -1,0 +1,295 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Profile Extra Fields\n"
+"POT-Creation-Date: 2022-12-30 16:58+0100\n"
+"PO-Revision-Date: 2022-12-30 16:58+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: business-profile-extra-fields.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: business-profile-extra-fields.php:98
+msgid "Extra fields Information - ONLY FOR THE MAIN LOCATION"
+msgstr ""
+"Champs supplémentaires Informations - UNIQUEMENT POUR L’EMPLACEMENT PRINCIPAL"
+
+#: business-profile-extra-fields.php:108
+msgid "Cellphone"
+msgstr "Natel"
+
+#: business-profile-extra-fields.php:109
+msgid "Do not use this anymore , it is included in the main plugin"
+msgstr "Ne l’utilisez plus, il est inclus dans le plugin principal"
+
+#: business-profile-extra-fields.php:123
+msgid "VAT Number"
+msgstr "Numéro de TVA"
+
+#: business-profile-extra-fields.php:124
+msgid ""
+"For EU countries this is COUNTRY+10digits (not checked against any database)"
+msgstr ""
+"Pour les pays de l’UE, il s’agit de PAYS+10chiffres (non vérifiés dans "
+"aucune base de données)"
+
+#: business-profile-extra-fields.php:138
+msgid "PROF ID"
+msgstr "Numero d’identité professionnelle"
+
+#: business-profile-extra-fields.php:139
+msgid ""
+"Fill in here your professional id for RIZIV / FEWEB or other official "
+"affiliation)"
+msgstr ""
+"Remplissez ici votre numero d’identité professionnelle pour RIZIV / FEWEB ou "
+"autre affiliation officielle)"
+
+#: business-profile-extra-fields.php:153
+msgid "Bank account"
+msgstr "Compte en banque"
+
+#: business-profile-extra-fields.php:154
+msgid ""
+"For EU countries this is COUNTRY+digits (not checked against any database)"
+msgstr ""
+"Pour les pays de l’UE, il s’agit de PAYS+chiffres (non vérifiés dans une "
+"base de données)"
+
+#: business-profile-extra-fields.php:168
+msgid "Bank BIC/SWIFT"
+msgstr "BIC/SWIFT"
+
+#: business-profile-extra-fields.php:169
+msgid "The banks number"
+msgstr "Le numéro de banque"
+
+#: business-profile-extra-fields.php:184
+msgid "Exception range"
+msgstr "Jours d’exception"
+
+#: business-profile-extra-fields.php:185
+msgid "any free text to display above opening hours "
+msgstr "tout texte libre à afficher au-dessus des heures d’ouverture "
+
+#: business-profile-extra-fields.php:200
+msgid "Facebook Link"
+msgstr "Lien Facebook"
+
+#: business-profile-extra-fields.php:201
+msgid "Link to your Facebook profile/page"
+msgstr "Lien vers votre profil/page Facebook"
+
+#: business-profile-extra-fields.php:215
+msgid "Facebook Link Text"
+msgstr "Texte du lien Facebook"
+
+#: business-profile-extra-fields.php:216 business-profile-extra-fields.php:246
+#: business-profile-extra-fields.php:276
+msgid "Text to display on link"
+msgstr "Texte à afficher sur le lien"
+
+#: business-profile-extra-fields.php:230
+msgid "Instagram Link"
+msgstr "Lien Instagram"
+
+#: business-profile-extra-fields.php:231
+msgid "Link to your Instagram page"
+msgstr "Lien vers votre page Instagram"
+
+#: business-profile-extra-fields.php:245
+msgid "Instagram Link Text"
+msgstr "Texte du lien Instagram"
+
+#: business-profile-extra-fields.php:260
+msgid "Twitter Link"
+msgstr "Lien Twitter"
+
+#: business-profile-extra-fields.php:261
+msgid "Link to your Twitter handle"
+msgstr "Lien vers votre pseudo Twitter"
+
+#: business-profile-extra-fields.php:275
+msgid "Twitter Link Text"
+msgstr "Texte du lien Twitter"
+
+#: business-profile-extra-fields.php:494 business-profile-extra-fields.php:722
+msgid "Follow us on Facebook"
+msgstr "Suivez-nous sur Facebook"
+
+#: business-profile-extra-fields.php:506 business-profile-extra-fields.php:733
+msgid "Follow us on Instagram"
+msgstr "Suivez-nous sur Instagram"
+
+#: business-profile-extra-fields.php:518 business-profile-extra-fields.php:744
+msgid "Follow us on Twitter"
+msgstr "Suivez-nous sur Twitter"
+
+#: business-profile-extra-fields.php:533 business-profile-extra-fields.php:576
+#: business-profile-extra-fields.php:792
+msgid "Exception days"
+msgstr "Jours d’exception"
+
+#: business-profile-extra-fields.php:590 business-profile-extra-fields.php:806
+#: includes/shared/weekdays.php:169
+msgid "Closed"
+msgstr "Fermé"
+
+#: business-profile-extra-fields.php:685
+msgid "VAT"
+msgstr "TVA"
+
+#: business-profile-extra-fields.php:694
+msgid "Professional ID"
+msgstr "Numero d’identité professionnelle"
+
+#: business-profile-extra-fields.php:703
+msgid "IBAN"
+msgstr "IBAN"
+
+#: business-profile-extra-fields.php:712
+msgid "BIC"
+msgstr "BIC"
+
+#: includes/shared/weekdays.php:59 includes/shared/weekdays.php:115
+#: includes/shared/weekdays.php:216
+msgid "Monday"
+msgstr ""
+
+#: includes/shared/weekdays.php:60 includes/shared/weekdays.php:116
+#: includes/shared/weekdays.php:217
+msgid "Tuesday"
+msgstr ""
+
+#: includes/shared/weekdays.php:61 includes/shared/weekdays.php:117
+#: includes/shared/weekdays.php:218
+msgid "Wednesday"
+msgstr ""
+
+#: includes/shared/weekdays.php:62 includes/shared/weekdays.php:118
+#: includes/shared/weekdays.php:219
+msgid "Thursday"
+msgstr ""
+
+#: includes/shared/weekdays.php:63 includes/shared/weekdays.php:119
+#: includes/shared/weekdays.php:220
+msgid "Friday"
+msgstr ""
+
+#: includes/shared/weekdays.php:64 includes/shared/weekdays.php:120
+#: includes/shared/weekdays.php:221
+msgid "Saturday"
+msgstr ""
+
+#: includes/shared/weekdays.php:65 includes/shared/weekdays.php:121
+#: includes/shared/weekdays.php:222
+msgid "Sunday"
+msgstr ""
+
+#: includes/shared/weekdays.php:70
+msgctxt ""
+"Separator between days of the week when displaying opening hours in brief. "
+"Example: Mo,Tu,We"
+msgid ","
+msgstr ""
+
+#: includes/shared/weekdays.php:73
+#, php-format
+msgctxt ""
+"Brief opening hours description which lists days_strings when open all day. "
+"Example: Mo,Tu,We all day"
+msgid "%s all day"
+msgstr ""
+
+#: includes/shared/weekdays.php:85
+#, php-format
+msgctxt ""
+"Brief opening hours description which lists the days followed by the closing "
+"time. Example: Mo,Tu,We open until 9:00pm"
+msgid "%s open until %s"
+msgstr ""
+
+#: includes/shared/weekdays.php:87
+#, php-format
+msgctxt ""
+"Brief opening hours description which lists the days followed by the opening "
+"time. Example: Mo,Tu,We open from 9:00am"
+msgid "%s open from %s"
+msgstr ""
+
+#: includes/shared/weekdays.php:89
+#, php-format
+msgctxt ""
+"Brief opening hours description which lists the days followed by the opening "
+"and closing times. Example: Mo,Tu,We 9:00am&thinsp;&ndash;&thinsp;5:00pm"
+msgid "%s %s&thinsp;&ndash;&thinsp;%s"
+msgstr ""
+
+#: includes/shared/weekdays.php:96
+msgctxt ""
+"Separator between multiple opening times in the brief opening hours. "
+"Example: Mo,We 9:00 AM&thinsp;&ndash;&thinsp;5:00 PM; Tu,Th 10:00 AM&thinsp;"
+"&ndash;&thinsp;5:00 PM"
+msgid "; "
+msgstr ""
+
+#: includes/shared/weekdays.php:133
+msgid "Open"
+msgstr "Ouvert"
+
+#: includes/shared/weekdays.php:145
+msgid "Open until "
+msgstr "Ouvert jusqu’au "
+
+#: includes/shared/weekdays.php:147
+msgid "Open from "
+msgstr "Ouvert à partir de "
+
+#: includes/shared/weekdays.php:149
+msgctxt ""
+"Separator between opening and closing times. Example: 9:00am&thinsp;&ndash;"
+"&thinsp;5:00pm"
+msgid "&thinsp;&ndash;&thinsp;"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Business Profile Extra Fields"
+msgstr "Champs supplémentaires du profil de l’entreprise"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jseutens/business-profile-extra-fields/"
+msgstr "https://github.com/jseutens/business-profile-extra-fields/"
+
+#. Description of the plugin/theme
+msgid ""
+"Modifies the Business Profile plugin to load the css in the header so it can "
+"be overruled include extra fields not available in the main plugin, If the "
+"main plugin adds fields , the fields in this plugin will go away."
+msgstr ""
+"Modifie le plugin Business Profile pour charger le css dans l’en-tête afin "
+"qu’il puisse être annulé inclure des champs supplémentaires non disponibles "
+"dans le plugin principal, Si le plugin principal ajoute des champs , les "
+"champs de ce plugin disparaîtront."
+
+#. Author of the plugin/theme
+msgid "Johan Seutens"
+msgstr "Johan Seutens"
+
+#. Author URI of the plugin/theme
+msgid "http://www.aati.be"
+msgstr "http://www.aati.be"
+
+#~ msgid "BIC/SWIFT"
+#~ msgstr "BIC/SWIFT"

@@ -1,0 +1,89 @@
+/* Frontend CSS Stylesheet for Business Profile Etra Fields contact cards */
+/* see contact card css of main plugin */
+/* overruling */ 
+.bp-opening-hours {
+	max-width: 30ch;	
+	min-width: 28ch;
+}
+.bp-weekday-name {
+	width: 15ch;
+}
+.bp-times {
+	width: 13ch;
+}
+/* additions */ 
+/* cellphone , VAT-number , PROF-number , PROF-number, bank-account-number , bank-bicswift-number, facebook-link , instagram-link , twitter-link */
+.bpefwp-cellphone:before,
+.bpefwp-VAT-number:before,
+.bpefwp-PROF-number:before,
+.bpefwp-bank-account-number:before,
+.bpefwp-bank-bicswift-number:before,
+.bpefwp-facebook-link:before,
+.bpefwp-instagram-link:before,
+.bpefwp-twitter-link:before {
+	display: inline-block;
+	width: 1.5em;
+	height: 1em;
+	font-size: 1.5em;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: top;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.bpefwp-cellphone:before {
+	content: "\f470";
+}
+.bpefwp-VAT-number:before{
+	content: "VAT:";
+	font-size: 1em;
+	font-family: unset;
+	width: auto;
+	vertical-align: unset;
+
+}
+.bpefwp-PROF-number:before{
+	content: "\f111";
+}
+.bpefwp-bank-account-number:before{
+	content: "\f526";
+}
+.bpefwp-bank-bicswift-number:before{
+	content: "\f16a";
+}
+.bpefwp-facebook-link:before{
+	content: "\f305";
+}
+.bpefwp-instagram-link:before{
+	content: "\f12d";
+}
+.bpefwp-twitter-link:before{
+	content: "\f302";
+}
+
+/* to style the shortcode links  */
+.bpefwp-sc-facebook-link a,
+.bpefwp-sc-instagram-link a,
+.bpefwp-sc-twitter-link a {
+color:inherit;
+}
+
+/**************
+BLOCK PATTERNS
+**************/
+.bpefwp-pattern-cellphone .bp-contact-card *
+{
+	display: none;
+}
+
+.bpefwp-pattern-cellphone .bp-contact-card .bpcell-phone,
+.bpefwp-pattern-cellphone .bp-contact-card .bpcell-phone * {
+	display: initial;
+}
